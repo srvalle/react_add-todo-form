@@ -5,12 +5,12 @@ interface Todo {
   title: string;
   completed: boolean;
   userId: number;
-  user?: {
+  user: {
     id: number;
     name: string;
     username: string;
     email: string;
-  };
+  } | null;
 }
 
 // export const TodoInfo = ({ todo }) => (
